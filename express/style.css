@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: black;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+    padding: 15px;
+}
+
+a{
+    font-size: 22px;
+    text-decoration: none;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input, textarea{
+    width: 50%;
+    margin: 5px 0;
+    padding: 5px;
+}

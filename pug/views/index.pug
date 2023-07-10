@@ -1,0 +1,58 @@
+//- index.pug 
+doctype html
+html
+    head
+        style
+          include ../static/style.css
+    body      
+        nav#navbar
+            ul
+                li #[a(href='#hero') Home]
+                li #[a(href='#about') About]
+                li #[a(href='#services') Services]
+                li #[a(href='#contact') Contact]
+
+        section#hero
+        h2 My Site
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aliquid cum distinctio doloribus eaque pariatur perferendis harum aperiam odio quidem voluptatem reiciendis voluptatum, aspernatur fugit! Unde explicabo alias, et harum neque quia. Asperiores eos aliquam quo omnis dolore, eius saepe natus. Dicta quisquam facere doloremque est autem sed vitae explicabo.
+
+        section#about
+        h2 About
+        p ipsum dolor sit amet consectetur adipisicing elit. Commodi quasi corrupti voluptas excepturi similique! Quo culpa tempora ex temporibus harum?
+
+        section#services
+        h2 Services
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, minima mollitia? Sed quod fuga eveniet?
+
+        //- cards
+        div.card
+            h4 Lorem ipsum dolor sit amet.
+            div.card-box 
+                img(src="", alt="")
+            div.card-content    
+                p Lorem ipsum dolor sit.
+
+        div.card
+            h4 Lorem ipsum dolor sit amet.
+            div.card-box 
+                img(src="", alt="")
+            div.card-content
+                p Lorem ipsum dolor sit.
+
+        div.card
+            h4 Lorem ipsum dolor sit amet.
+                    div.card-box 
+                img(src="", alt="")
+            div.card-content
+                p Lorem ipsum dolor sit.
+
+        section#contact
+        form#form(action="/" method='post') 
+            input(type='text' name='name' placeholder='Name')
+            input(type='email' name='email' placeholder='Email')
+            input(type='password' name='password' placeholder='Password')
+            textarea(name="message" rows="3" placeholder="If you have any query plz feel free")
+            button(type="submit") Submit
+
+        script 
+          include ../static/01.js    

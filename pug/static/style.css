@@ -1,0 +1,32 @@
+#services{
+    height: 326px;; 
+    width: 67%;
+    margin: auto;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 25%;
+    margin: 23px 20px;
+    height: 209px;
+}
+
+.card h4{
+    text-align: center;
+    margin: 0 12px;
+    margin-top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+input,textarea{
+    width: 50%;
+    margin: 5px 0;
+    padding: 5px;
+}
